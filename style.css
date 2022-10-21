@@ -1,0 +1,210 @@
+@font-face {
+    font-family:'Poppins';
+    src: url('./gg/poppins-v20-latin/poppins-v20-latin-regular.ttf');
+}
+h1{
+    font-size: 64px;
+    color:#1D3444;
+    font-family:'Poppins';
+}
+h2{
+    font-size: 48px;
+    margin:0 auto;
+    font-family:'Poppins';
+    font-weight: bold;
+}
+h3{
+    font-size: 36px;
+    font-family:'Poppins';
+}
+h4{
+    font-size: 24px;
+    font-family:'Poppins';
+    margin:0
+}
+p{
+    font-size: 16px;
+    font-family:'Poppins';
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-family:'Poppins';
+}
+.one a{
+    color: #F58A07;
+}
+.one a::after{
+    content: '\2192';   
+}
+.seven a{
+    color: #F58A07;
+}
+.seven a::after{
+    content: '\2192';
+}
+.headerheseg{
+    margin:0 auto;
+}
+.row h4{
+    flex-grow: 1;
+}
+.ondoo .col-2{
+    background-color: #F58A07;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.bodyy .col-2{
+    padding: 0;
+}
+.uur{
+    padding: 10px;
+    background-color: #F58A07;
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
+}
+.partner p{
+    margin-top: 50px;
+    color:#5B5B5B;
+}
+.row .main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none; 
+  }
+.neg{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: #DCEAF5;
+}
+.neg-content{
+    display: flex; 
+}
+.neg-title-items{
+padding: 100px 0px 0px 0px;
+color: #063255;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: top;
+    position: relative;
+}
+.row{
+    display: flex;
+    gap:20px
+}
+.col-2{
+    width: calc(100%/2);
+    padding: 20px;
+}
+.col-3{
+    width: calc(100%/3);
+    padding: 10px;
+}
+.zurag{
+    border-radius: 10%;
+}
+.col{
+    list-style: none;
+    width: calc(100%/5);
+}
+.service{
+    padding: 3%;
+    margin: 0 auto;
+}
+.two{
+    background-color: #DCEAF5;
+}
+.four .container{
+    background-color: #DCEAF5;
+}
+.seven{
+    background-color:#DCEAF5
+}
+.two .col-3{
+    background-color: white;
+    border-radius: 10%;
+}
+.seven .col-3{
+    background-color: white;
+    border-radius: 10%;
+}
+footer{
+    background-color:#063255 ;
+    height: 500px;
+}
+footer .col a{
+    color: white;
+}
+.ygaan{
+    color:#F58A07;
+    font-size: 36px;
+    font-weight: bold;
+}
+img{
+    border-radius: 10%;
+    max-width: 100%;
+}
+.wix{
+    background-image: url(./images/experience-image.png);
+    background-size: 50%;
+    max-width: 100%;
+    background-color: #F58A07;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.five .col-2{
+    margin-left: 50%;
+    margin-top: 100px;
+    color:white;
+    text-align: left;
+}
+.col-2 .buur{
+    padding: 20px;
+    background-color:white;
+    border-radius: 20px;
+    color:#F58A07;
+    position: absolute;
+    margin-top: 50px;
+}
+.four h2{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.four p{
+    margin-right: 50px;
+}
+.six h2{
+    margin-top: 50px;
+
+}
+.three h2{
+    margin-top: 50px;
+}
+.four .row li{
+    border: dashed;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0;
+}
+#pic{
+    margin-left: 88%;
+    position: absolute;
+}
+.four .row img{
+    position: relative;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 80px;
+   
+}
+.four .row img::after{
+    inset: 0 75% 0 0;
+    position: absolute;
+    background-color: #F58A07;
+}
