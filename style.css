@@ -1,3 +1,4 @@
+
 @font-face {
     font-family:'Poppins';
     src: url('./gg/poppins-v20-latin/poppins-v20-latin-regular.ttf');
@@ -37,6 +38,12 @@ a{
 .one a::after{
     content: '\2192';   
 }
+.four a{
+    color: #F58A07;
+}
+.four a::after{
+    content: '\2192';  
+}
 .seven a{
     color: #F58A07;
 }
@@ -54,8 +61,10 @@ a{
     border-radius: 20px;
     text-align: center;
     color: white;
+    padding: 10px;
+    
 }
-.bodyy .col-2{
+body .col-2{
     padding: 0;
 }
 .uur{
@@ -99,8 +108,6 @@ color: #063255;
 }
 .col-2{
     width: calc(100%/2);
-    /* padding: 20px;
-    position: relative; */
 }
 .col-3{
     width: calc(100%/3);
@@ -108,10 +115,6 @@ color: #063255;
 }
 .zurag{
     border-radius: 10%;
-}
-.col{
-    list-style: none;
-    width: calc(100%/5);
 }
 .service{
     padding: 3%;
@@ -126,7 +129,8 @@ color: #063255;
     padding: 30px;
 }
 .seven{
-    background-color:#DCEAF5
+    background-color:#DCEAF5;
+    overflow: hidden;
 }
 .two .col-3{
     background-color: white;
@@ -135,14 +139,6 @@ color: #063255;
 .seven .col-3{
     background-color: white;
     border-radius: 10%;
-}
-footer{
-    background-color:#063255 ;
-    height: 500px;
-    position: relative;
-}
-footer .col a{
-    color: white;
 }
 .ygaan{
     color:#F58A07;
@@ -159,7 +155,7 @@ img{
     max-width: 100%;
     background-color: #F58A07;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 50vh;
 }
 .five .col-2{
     margin-left: 60%;
@@ -191,11 +187,11 @@ img{
     margin-top: 50px;
 }
 .four .row li{
-    border: dashed;
-    flex-grow: 1;
-    padding: 10px;
+    border: ridge;
+    padding: 4px;
     border-radius: 20px;
     margin: 0;
+    list-style: none;
 }
 #pic{
     margin-left: 88%;
@@ -217,11 +213,10 @@ width: 200px;
 .four .mix::after{
     content: '';
     position: absolute;
-    inset: 0 65% 0 0;
+    inset: 0 65% 0% 0;
     background-color: #F58A07;
-    border-radius: 20px 0 0 20px;
+    border-radius: 50px 0 0 50px;
     mix-blend-mode: multiply;
-    border-radius: 50px 0 0 60px;
     margin-top: 100px;
     margin-left: 100px;}
 .four img{
@@ -232,22 +227,130 @@ width: 200px;
     position: absolute;
     inset: 0 70% 0 0;
     background-color: #F58A07;
-    border-radius: 20px 0 0 20px;
     mix-blend-mode: multiply;
-    border-radius: 50px 0 0 60px;
+    border-radius: 60px 0 0 70px;
 }
-.sda::after{
+.corner-1::after{
     content: '';
     position: absolute;
     inset: 70% 98% 0 0;
     background-color: #F58A07;
     border-radius: 0px 20px 0px 0px;
 }
-.sdara::after{
+.corner-2::after{
     content: '';
     position: absolute;
     inset: 0 0 30% 98%;
     background-color: #F58A07;
     border-radius: 20px 0px 0px 20px;
     margin-top: 30px;
+}
+footer{
+    background-color:#063255 ;
+    height: 400px;
+    position: relative;
+    color:white
+}
+footer li{
+    padding: 10px;
+}
+footer .col-4 a{
+    color: white;
+}
+.col-4{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+ .none img{
+    height: 521px;
+    width: calc(100%);
+}
+.lol .mix::after{
+    content: '';
+    position: absolute;
+    inset: 0 65% 0% 0;
+    background-color: #F58A07;
+    border-radius: 50px 0 0 50px;
+    mix-blend-mode: multiply;
+}
+.lil .mix-1::after{
+    content: '';
+    position: absolute;
+    inset: 70% -5% -5% 70%;
+    background-color: #F58A07;
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+}
+
+.lul .row{
+ margin-top: 40px;
+ margin-bottom: 20px;
+}
+.lol .mix-2::after{
+    content: '';
+    position: absolute;
+    inset: 0 65% 0% 0;
+    background-color: #F58A07;
+    border-radius: 50px 0 0 50px;
+    mix-blend-mode: multiply;}
+.lul .mix-service1::after{
+    content: '';
+    position: absolute;
+    inset: 23% 90%  60% -9%;
+    background-color: #F58A07;
+    mix-blend-mode: multiply;}
+.lul .mix-service2::after{
+    content: '';
+    position: absolute;
+    inset: 50% -9%  33% 90%;
+    background-color: #F58A07;
+    mix-blend-mode: multiply;}   
+.lul .mix-service3::after{
+    content: '';
+    position: absolute;
+    inset: 23% 90%  60% -9%;
+    background-color: #F58A07;
+    mix-blend-mode: multiply;} 
+.lul .mix-service4::after{
+    content: '';
+    position: absolute;
+    inset: 50% -9%  33% 90%;
+    background-color: #F58A07;
+    mix-blend-mode: multiply;} 
+.lul .mix-service5::after{
+    content: '';
+    position: absolute;
+    inset: 23% 90%  60% -9%;
+    background-color: #F58A07;
+    mix-blend-mode: multiply;} 
+.col-6{
+background-color: #DCEAF5;
+padding: 10px;
+border-radius: 10%;
+margin: 10px;
+width: calc(100%/3);
+}
+.nine a{
+    color:#F58A07;
+}
+.col-7{
+    width: calc(100%/3);
+    background-color: #DCEAF5;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    padding: 10px;
+}
+input{
+    border-radius: 20px;
+    padding: 20px 120px 20px 10px;
+}
+.row .main-nav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none; 
+    color: white;
 }
