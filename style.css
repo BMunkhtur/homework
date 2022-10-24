@@ -2,52 +2,42 @@
     font-family:'Poppins';
     src: url('./gg/poppins-v20-latin/poppins-v20-latin-regular.ttf');
 }
+h1, h2, h3, h4, p, a{
+    font-family:'Poppins';
+}
 h1{
     font-size: 64px;
     color:#1D3444;
-    font-family:'Poppins';
 }
 h2{
     font-size: 48px;
     margin:0 auto;
-    font-family:'Poppins';
-    font-weight: bold;
 }
 h3{
     font-size: 36px;
-    font-family:'Poppins';
 }
 h4{
     font-size: 24px;
-    font-family:'Poppins';
     margin:0 auto;
 }
 p{
     font-size: 16px;
-    font-family:'Poppins';
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: top;
+    position: relative;
 }
 a{
     text-decoration: none;
     color:black;
-    font-family:'Poppins';
 }
-.one a{
-    color: #F58A07;
-}
-.one a::after{
+.one a::after, .four a::after, .seven a::after{
     content: '\2192';   
 }
-.four a{
+.four a, .seven a, .one a, .nine a, .ondoo .col-2{
     color: #F58A07;
-}
-.four a::after{
-    content: '\2192';  
-}
-.seven a{
-    color: #F58A07;
-}
-.seven a::after{
-    content: '\2192';
 }
 .headerheseg{
     margin:0 auto;
@@ -60,8 +50,7 @@ a{
     border-radius: 20px;
     text-align: center;
     color: white;
-    padding: 10px;
-    
+    padding: 10px;   
 }
 body .col-2{
     padding: 0;
@@ -92,14 +81,8 @@ body .col-2{
     display: flex; 
 }
 .neg-title-items{
-padding: 100px 0px 0px 0px;
-color: #063255;
-}
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: top;
-    position: relative;
+    padding: 100px 0px 0px 0px;
+    color: #063255;
 }
 .row{
     display: flex;
@@ -119,23 +102,14 @@ color: #063255;
     padding: 3%;
     margin: 0 auto;
 }
-.two{
+.two, .seven,.four .container{
     background-color: #DCEAF5;
 }
 .four .container{
-    background-color: #DCEAF5;
     border-radius: 5%;
     padding: 30px;
 }
-.seven{
-    background-color:#DCEAF5;
-    overflow: hidden;
-}
-.two .col-3{
-    background-color: white;
-    border-radius: 10%;
-}
-.seven .col-3{
+.two .col-3, .seven .col-3{
     background-color: white;
     border-radius: 10%;
 }
@@ -154,14 +128,13 @@ img{
     max-width: 100%;
     background-color: #F58A07;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 40vh;
 }
 .five .col-2{
     margin-left: 60%;
-    margin-top: 100px;
+    margin-top: 50px;
     color:white;
     text-align: left;
-
 }
 .col-2 .buur{
     padding: 20px;
@@ -170,19 +143,14 @@ img{
     color:#F58A07;
     position: absolute;
 }
-.four h2{
+.four h2, .three h2, .innerimg,.lol, .lul .row{
     margin-top: 50px;
-    margin-right: 50px;
 }
-.four p{
+.four p, .four h2{
     margin-right: 50px;
 }
 .six h2{
     margin-top: 5x;
-
-}
-.three h2{
-    margin-top: 50px;
 }
 .four .row li{
     border: ridge;
@@ -195,40 +163,28 @@ img{
     margin-left: 88%;
     position: absolute;
 }
-
-.four{
+.four, .exp{
     position: relative;
 }
 .four .ribbon{
-margin-left: 84%;
-top: -19%;
-position: absolute;
-width: 200px;
-}
-.exp{
-    position: relative;
+    margin-left: 84%;
+    top: -19%;
+    position: absolute;
+    width: 200px;
 }
 .four .mix::after{
-    content: '';
-    position: absolute;
     inset: 0 65% 0% 0;
-    background-color: #F58A07;
     border-radius: 50px 0 0 50px;
-    mix-blend-mode: multiply;
-    margin-top: 100px;
-    margin-left: 100px;}
-.four img{
+}
+.four img, .four .mix::after{
     margin-top: 100px;
     margin-left: 100px;
-}.three .mix::after{
-    content: '';
-    position: absolute;
+}
+.three .mix::after{
     inset: 0 70% 0 0;
-    background-color: #F58A07;
-    mix-blend-mode: multiply;
     border-radius: 60px 0 0 70px;
 }
-.corner-1::after{
+.corner-1::after,.corner-2::after{
     content: '';
     position: absolute;
     inset: 70% 98% 0 0;
@@ -236,10 +192,7 @@ width: 200px;
     border-radius: 0px 20px 0px 0px;
 }
 .corner-2::after{
-    content: '';
-    position: absolute;
     inset: 0 0 30% 98%;
-    background-color: #F58A07;
     border-radius: 20px 0px 0px 20px;
     margin-top: 30px;
 }
@@ -267,72 +220,44 @@ footer .col-4 a{
     width: calc(100%);
 }
 .lol .mix::after{
-    content: '';
-    position: absolute;
     inset: 0 65% 0% 0;
-    background-color: #F58A07;
     border-radius: 50px 0 0 50px;
-    mix-blend-mode: multiply;
 }
 .lil .mix-1::after{
-    content: '';
-    position: absolute;
     inset: 70% -5% -5% 70%;
-    background-color: #F58A07;
     border-radius: 20px;
-    mix-blend-mode: multiply;
-}
-
-.lul .row{
- margin-top: 40px;
- margin-bottom: 100px;
 }
 .lol .mix-2::after{
-    content: '';
-    position: absolute;
     inset: 0 65% 0% 0;
-    background-color: #F58A07;
-    border-radius: 50px 0 0 50px;
-    mix-blend-mode: multiply;}
-.lul .mix-service1::after{
+    border-radius: 50px 0 0 50px;}
+.lul .mix-service1:after,.mix-service2::after,.mix-service3::after,.mix-service4::after,.mix-service5::after,.lol .mix::after,.lil .mix-1::after,.lol .mix-2::after,.four .mix::after,.three .mix::after
+{
     content: '';
     position: absolute;
-    inset: 23% 90%  60% -9%;
     background-color: #F58A07;
-    mix-blend-mode: multiply;}
+    mix-blend-mode: multiply;
+}
+.lul .mix-service1:after{
+    inset: 23% 90%  60% -9%;
+}
 .lul .mix-service2::after{
-    content: '';
-    position: absolute;
-    inset: 50% -9%  33% 90%;
-    background-color: #F58A07;
-    mix-blend-mode: multiply;}   
+    inset: 50% -9%  33% 90%;  
+}
 .lul .mix-service3::after{
-    content: '';
-    position: absolute;
     inset: 23% 90%  60% -9%;
-    background-color: #F58A07;
-    mix-blend-mode: multiply;} 
+} 
 .lul .mix-service4::after{
-    content: '';
-    position: absolute;
     inset: 50% -9%  33% 90%;
-    background-color: #F58A07;
-    mix-blend-mode: multiply;} 
+} 
 .lul .mix-service5::after{
-    content: '';
-    position: absolute;
     inset: 23% 90%  60% -9%;
-    background-color: #F58A07;
-    mix-blend-mode: multiply;} 
+} 
 .col-6{
     background-color: #DCEAF5;
     padding: 10px;
     border-radius: 10%;
     margin: 10px;
     width: calc(100%/3);
-}
-.nine a{
-    color:#F58A07;
 }
 .col-7{
     width: calc(100%/3);
@@ -372,4 +297,16 @@ input{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.buhel{
+    margin-left: 264px;
+    margin-right: 264px;
+    margin-top: 100px;
+}
+.blogimg{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.line img{
+   filter:grayscale(100%);
 }
