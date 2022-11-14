@@ -1,0 +1,58 @@
+.col-2{
+width: 50%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    max-width: 100%;
+    background-color: rgb(113, 143, 183);
+    margin: 0 auto;
+}
+.color-1{
+    background-color: white;
+    height: 60vh;
+    padding: 50px;
+    border-radius: 5% 0% 0% 5%;
+    margin-left: 200px;
+    
+}
+.color-2{
+    background-color: rgb(38, 46, 156);
+    height: 60vh;
+    margin-right: 200px;
+    padding: 50px;
+    border-radius: 0% 5% 5% 0%
+}
+
+input{
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+select{
+    padding: 20px;
+    border: none;
+    border:0ch;
+    font-size: 20px;
+    background-color: transparent;
+}
+.firsth1{
+    color:blue;
+    border: none;
+    font-size: 40px;
+}
+.twoh1{
+    color:white;
+    border: none;
+    font-size: 40px;
+}
+.row-1{
+    display: flex;
+}
+
+.color-2 input::placeholder {
+    color: #fff;
+}
+
