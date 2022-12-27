@@ -2,7 +2,7 @@ console.log("Ecommerce");
 
 //all variables
 const productList = document.querySelector(".productList")
-
+const cartCount = document.querySelector(".cartCount")
 let allProducts = []
 const getProducts = async () => {
     const response = await fetch ("https://dummyjson.com/products")
@@ -12,7 +12,6 @@ const getProducts = async () => {
     console.log("Data:", data)
 };
 getProducts();
-
 const displayProduct = () => {
     allProducts.forEach((product) => {
     const item =  `<div class="col-2">
@@ -34,7 +33,7 @@ const displayProduct = () => {
                     <span class="bi bi-star-half text-warning col-1"></span>
                     <p class="rating col-4">${product.rating}</p>
                 </div>
-                <a href="#" class="btn bg-dark text-white col-4"><i class="bi bi-cart"></i> Сагслах</a>
+                <a onl href="#" class="btn bg-dark text-white col-4"><i class="bi bi-cart"></i> Сагслах</a>
             </div>
         </div>
         </div>
@@ -53,7 +52,11 @@ function plus() {
   counter += 1;
   document.getElementById("counter").innerHTML = counter;
 }
-
+const addCart = (idx) => {
+    cartProducts.push (allProducts[idx]);
+    cartCount.innerText = cartProducts.length;
+    displayCart()
+};
 
 
 
