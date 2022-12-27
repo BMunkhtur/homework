@@ -1,0 +1,20 @@
+.search{
+    width: 1300px;
+}
+.zurag{
+ 
+    background-color: blue;
+}
+.number{
+position: absolute;
+margin-top: -52px;
+margin-left: 100px;
+color:white;
+font-size: larger;
+border: solid 2px;
+border-radius: 50%;
+background-color: red;
+}
+.numbergar{
+    position: relative;
+}
