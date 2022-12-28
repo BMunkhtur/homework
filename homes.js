@@ -5,7 +5,7 @@ const cartList = document.querySelector(".cartList");
 const productsEvent = document.querySelector(".productsEvent");
 const cartCount = document.querySelector(".cartCount");
 const catog = document.querySelector("catog")
-const cartPrice = document.querySelector("cartprice")
+const cartPrice = document.querySelector(".cartPrice")
 
 let allProducts = [];
 let cartProducts = [];
@@ -56,7 +56,8 @@ getProducts();
 const addCart = (productId)=> {
   const findIndx = cartProducts.findIndex((item)=>item.id === productId)
   if(findIndx > -1){
-  cartProducts[findIndx].count += 1;
+cartProducts[findIndx].count += 1;
+
   }else {
       const findIndex = allProducts.findIndex((item)=>item.id === productId)
 
@@ -100,31 +101,30 @@ const displayCart = () => {
                 <p class="fw-bold mb-0 me-5 pe-3">$${product.price}</p>
                 <div class="countnumber">
                   <div class='counter'>
-                    <div class='down btn bg-dark text-white' onclick='decreaseCount(event, this)'>- </div>
+                    <div class='down btn bg-dark text-white' onclick='decreaseCount(event,this, ${product.id})'>- </div>
                     <input type='text' class="bg-dark text-white zagwar btn" value="${product.count}">
                     <div class='up btn bg-dark text-white' onclick='increaseCount(event, this)'>+</div>
                   </div>
                 </div>
               </div>
             </div>
-            
         </div>`;
     cartList.innerHTML += cartItem;
   }
-  const Price = calculateCartPrice();
-  // Price.innerText = $$(totalCartPrice);
+  const price = calculateCartPrice();
+  cartPrice.innerText = `$${price}`;
 };
 
-const ust = (e) => {
+const ust = (e,productId) => {
   let parent = e.parentNode.parentNode.parentNode;
   let child = e.parentNode.parentNode;
   parent.removeChild(child);
 
-  cartProducts.pop();
+  const findIndx = cartProducts.findIndex((item)=>item.id === productId)
+  cartCount.splice(findIndx,1);
   cartCount.innerText = cartProducts.length;
 
-
-
+  displayCart();
 };
 
 
