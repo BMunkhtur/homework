@@ -4,14 +4,18 @@ const productList = document.querySelector(".productList");
 const cartList = document.querySelector(".cartList");
 const productsEvent = document.querySelector(".productsEvent");
 const cartCount = document.querySelector(".cartCount");
+const catog = document.querySelector("catog")
+const cartPrice = document.querySelector("cartprice")
+
 let allProducts = [];
 let cartProducts = [];
+let allcatog = []
 
 const displayProduct = () => {
   productList.innerHTML = "";
   allProducts.forEach((product, idx) => {
-    const productItem = `<div class="col-3 p-2">
-    <div class="card"   style= "width:100%;">
+    const productItem = `<div class="col-3 mb-5">
+    <div class="card baraa"   style= "width:100%;">
         <img 
             style= "width:100%; height:200px;"
             src="${product.thumbnail}" alt="zurag">
@@ -49,11 +53,29 @@ const getProducts = async () => {
 
 getProducts();
 
-const addCart = (idx) => {
-  cartProducts.push(allProducts[idx]);
+const addCart = (productId)=> {
+  const findIndx = cartProducts.findIndex((item)=>item.id === productId)
+  if(findIndx > -1){
+  cartProducts[findIndx].count += 1;
+  }else {
+      const findIndex = allProducts.findIndex((item)=>item.id === productId)
+
+      const newBaraa = {count: 1, ...allProducts[findIndex]  }
+
+      cartProducts.push(newBaraa);
+    } 
   cartCount.innerText = cartProducts.length;
   displayCart();
 };
+
+
+const calculateCartPrice = () => {
+  const sumPrice = 0;
+  for(product of cartProducts){
+    sumPrice = sumPrice + product.price * product.count;
+  }
+  return sumPrice; 
+}
 
 const displayCart = () => {
   cartList.innerHTML = "";
@@ -69,7 +91,7 @@ const displayCart = () => {
               />
             </div>
             <div class="flex-grow-1 ms-3">
-              <button class="btn float-end text-black">
+              <button onclick="ust(this)" class="btn float-end text-black">
                <i class="fas fa-times"></i>
               </button>
               <h5 class="text-dark">${product.title}</h5>
@@ -77,19 +99,36 @@ const displayCart = () => {
               <div class="d-flex align-items-center">
                 <p class="fw-bold mb-0 me-5 pe-3">$${product.price}</p>
                 <div class="countnumber">
-        
                   <div class='counter'>
                     <div class='down btn bg-dark text-white' onclick='decreaseCount(event, this)'>- </div>
-                    <input type='text' class="bg-dark text-white zagwar btn" value='1'>
+                    <input type='text' class="bg-dark text-white zagwar btn" value="${product.count}">
                     <div class='up btn bg-dark text-white' onclick='increaseCount(event, this)'>+</div>
                   </div>
                 </div>
               </div>
             </div>
+            
         </div>`;
     cartList.innerHTML += cartItem;
   }
+  const Price = calculateCartPrice();
+  // Price.innerText = $$(totalCartPrice);
 };
+
+const ust = (e) => {
+  let parent = e.parentNode.parentNode.parentNode;
+  let child = e.parentNode.parentNode;
+  parent.removeChild(child);
+
+  cartProducts.pop();
+  cartCount.innerText = cartProducts.length;
+
+
+
+};
+
+
+
 function increaseCount(e, el) {
   var input = el.previousElementSibling;
   var value = parseInt(input.value, 10);

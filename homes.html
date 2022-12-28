@@ -30,21 +30,48 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light list-one ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="zurag p-1" src="./Letter.svg" alt="E-commerce">  E-Commerce</a>
+        <a class="navbar-brand" href="#"><img class="zurag p-1" src="./Letter.png" alt="E-commerce">  E-Commerce</a>
         <form class="col-9 ms-3">
            <div class="input">
              <input type="text" class="form-control" placeholder="Search" name="search">
            </div>
          </form>
         <div class="col ps-5">
-                <button type="button" class="btn  form-control border bg-white text-primary ms-2 ">Нэвтрэх</button>
+                <button type="button" class="btn text-primary bg-white form-control ms-2 login " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Нэвтрэх</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Нэвтрэх</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Нэр:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Нууц үг:</label>
+                            <input type="password" class="form-control" id="recipient-name">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="col btn border border-danger btn-outline-danger btn-outline-text-white" data-bs-dismiss="modal">Буцах</button>
+                        <div class="col-5"></div>
+                        <button type="button" class="col btn btn-primary">Нэвтрэх</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
         <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
           <div class="d-flex align-items-center">
             <button
-              class="btn bg-white text-primary position-relative border"
+              class="btn bg-white text-primary position-relative border backet"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"
@@ -61,24 +88,48 @@
         </div>
       </div>
     </nav>
-    <div class="row d-flex m-3 list-two">
+    
+    <div class="row d-flex list-two p-3">
       <div class="col p-2 ">
           <ul class="navbar-nav flex-row">
-           <li class="nav-item col pe-3"><a class="nav-link text-secondary" id="counter" href="">smaetphones</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">Entertainment </a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">Laptop</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link text-secondary" href="">fragrances</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">skincare</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">groceries</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">home-decoration</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link text-secondary" href="">furniture</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">tops</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">womens-shoes</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">mens-shirts</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">mens-watches</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-secondary" href="">womans-watches</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link text-dark" id="counter" href="">Smartphones</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">Entertainment </a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">Laptop</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link text-dark" href="">fragrances</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">skincare</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">groceries</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">home-decoration</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link text-dark" href="">furniture</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">tops</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">womens-shoes</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">mens-shirts</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">mens-watches</a></li>
+           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">womans-watches</a></li>
      </div>
   </div>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="llr"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="llr1"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="llr2"></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
     <div class="container my-5 productsEvent">
       <div class="row d-flex justify-content-center">
         <div class="col-12">
@@ -96,7 +147,11 @@
           </div>
         </div>
       </div>
+      <div class=""></div>
     </div>
+  
+
+</div>
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
@@ -124,8 +179,8 @@
               class="d-flex justify-content-between p-2 mb-2"
               style="background-color: #e1f5fe"
             >
-              <h5 class="fw-bold mb-0 me-1">Нийт төлбөр:</h5>
-              <h5 class="fw-bold mb-0">????</h5>
+              <h5 class="fw-bold mb-0 me-1 cartPrice">Нийт төлбөр:</h5>
+              <h5 class="fw-bold mb-0 price"></h5>
             </div>
           </div>
           <div class="modal-footer">
@@ -151,6 +206,10 @@
                           <label for="recipient-name" class="col-form-label">Дансны нэр:</label>
                           <input type="text" class="form-control" id="recipient-name">
                         </div>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Картын дугаар:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
                       </form>
                     </div>
                     <div class="modal-footer">
@@ -166,8 +225,8 @@
         </div>
       </div>
     </div>
-    <div class="row d-flex justify-content-center mt-5 productList gap-5">
-    </div>
+  
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

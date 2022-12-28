@@ -27,3 +27,34 @@ background-color: red;
 .up{
     width: 30px;
 }
+.list-two{
+    background-color: rgb(164, 52, 164);
+    
+}
+.list-one{
+    background-color: purple;
+}
+.llr{
+    background-image: url(https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80);
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.llr1{
+    background-image: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.llr2{
+    background-image: url(https://images.unsplash.com/photo-1591054333829-3a3ce5d57fca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80);
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}   
