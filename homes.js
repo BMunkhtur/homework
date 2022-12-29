@@ -1,5 +1,5 @@
 console.log("ECOMMERCE");
-// All variables and DOM
+
 const productList = document.querySelector(".productList");
 const cartList = document.querySelector(".cartList");
 const productsEvent = document.querySelector(".productsEvent");
@@ -8,7 +8,7 @@ const catog = document.querySelector("catog")
 const cartPrice = document.querySelector(".cartPrice")
 
 let allProducts = [];
-let cartProducts = [];
+let cartProducts = [];  
 let allcatog = []
 
 const displayProduct = () => {
@@ -71,12 +71,12 @@ cartProducts[findIndx].count += 1;
 
 
 const calculateCartPrice = () => {
-  const sumPrice = 0;
-  for(product of cartProducts){
+  let sumPrice = 0;
+  for (product of cartProducts) {
     sumPrice = sumPrice + product.price * product.count;
   }
-  return sumPrice; 
-}
+  return sumPrice;
+};
 
 const displayCart = () => {
   cartList.innerHTML = "";
@@ -111,23 +111,19 @@ const displayCart = () => {
         </div>`;
     cartList.innerHTML += cartItem;
   }
-  const price = calculateCartPrice();
-  cartPrice.innerText = `$${price}`;
+  const totalCartPrice = calculateCartPrice();
+  cartPrice.innerText = `$${totalCartPrice}`;
 };
 
 const ust = (e,productId) => {
   let parent = e.parentNode.parentNode.parentNode;
   let child = e.parentNode.parentNode;
   parent.removeChild(child);
-
   const findIndx = cartProducts.findIndex((item)=>item.id === productId)
   cartCount.splice(findIndx,1);
   cartCount.innerText = cartProducts.length;
-
   displayCart();
 };
-
-
 
 function increaseCount(e, el) {
   var input = el.previousElementSibling;
@@ -145,3 +141,10 @@ function decreaseCount(e, el) {
     input.value = value;
   }
 }
+
+
+
+
+
+
+

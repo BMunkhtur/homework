@@ -28,11 +28,11 @@ background-color: red;
     width: 30px;
 }
 .list-two{
-    background-color: rgb(164, 52, 164);
-    
+    background-color: white;
 }
 .list-one{
-    background-color: purple;
+    background-color: rgb(238, 231, 238);
+    height: 100px;
 }
 .llr{
     background-image: url(https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80);
@@ -51,10 +51,14 @@ background-color: red;
     opacity: 0.5;
 }
 .llr2{
-    background-image: url(https://images.unsplash.com/photo-1591054333829-3a3ce5d57fca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80);
+    background-image: url(https://new-tech.mn/wp-content/uploads/2021/10/banner.jpg);
     width: 100vw;
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
 }   
+.listcat{
+    background-color: gray;
+    height: 1400px;
+}
+

@@ -29,203 +29,425 @@
     <title>Shop</title>
   </head>
   <body>
+    <div class="contianer">
+      <nav class="navbar navbar-expand-lg navbar-light list-one">
+        <div class="container-fluid">
+          <a class="navbar-brand" 
+              href="#">
+          <img class="zurag p-1" 
+               src="./Letter.svg" 
+               alt="E-commerce">
+               E-Commerce</a>
+          <form class="col-9 ms-3">
+             <div class="input">
+               <input type="text" 
+                      class="form-control btn-lg" 
+                      placeholder="Search" 
+                      name="search">
+             </div>
+          </form>
+          <div class="col ps-5">
+                  <button type="button" 
+                          class="btn btn-lg text-primary bg-white form-control ms-2 login " 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#exampleModal" 
+                          data-bs-whatever="@mdo">
+                          Нэвтрэх
+                  </button>
+                  <div class="modal fade" 
+                       id="exampleModal" 
+                       tabindex="-1" 
+                       aria-labelledby="exampleModalLabel" 
+                       aria-hidden="true" 
+                       style="display: none;">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" 
+                              id="exampleModalLabel">
+                                  Нэвтрэх
+                          </h1>
+                          <button type="button" 
+                                  class="btn-close" 
+                                  data-bs-dismiss="modal" 
+                                  aria-label="Close">
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" 
+                                     class="col-form-label">
+                                            Нэр:
+                              </label>
+                              <input type="text" 
+                                     class="form-control" 
+                                     id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-name" 
+                                     class="col-form-label">
+                                            Нууц үг:
+                              </label>
+                              <input type="password" 
+                                     class="form-control" 
+                                     id="recipient-name">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" 
+                                  class="col btn border border-danger btn-outline-danger btn-outline-text-white" 
+                                  data-bs-dismiss="modal">Буцах
+                          </button>
+                          <div class="col-5"></div>
+                          <button type="button" class="col btn btn-primary">Нэвтрэх</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+            <div class="d-flex align-items-center">
+              <button
+                class="btn bg-white text-primary position-relative border backet"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <i class="fas fa-shopping-cart">Миний сагс</i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cartCount"
+                >
+                  0
+                  <span class="visually-hidden">count</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="row d-flex list-two p-3">
+        <div class="col p-2 ">
+            <ul class="navbar-nav flex-row">
+             <li class="nav-item p-4 "><a class="nav-link text-dark h5" id="counter" href="">Smartphones</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Laptop</a></li>
+             <li class="nav-item p-4 "><a class="nav-link text-dark h5" href="">Fragrances</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Skincare</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Groceries</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Entertainment </a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Home-Decoration</a></li>
+             <li class="nav-item p-4 "><a class="nav-link text-dark h5" href="">Furniture</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Tops</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Womens-Shoes</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Mens-Shirts</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Mens-Watches</a></li>
+             <li class="nav-item p-4 "><a class="nav-link  text-dark h5" href="">Womans-Watches</a></li>
+            </ul>
+       </div>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="llr"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="llr1"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="llr2"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3 listcat container my-5">
+      <ul class="navbar-nav">
+        <h3 class="p-3 text-white">Бүтээгдхүүний ангилал</h3>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Smartphones</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Laptop</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Fragrances</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Skincare</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Groceries</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Entertainment</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Home-Decoration</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Furniture</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Tops</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Womens-Shoes</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Mens-Shirts</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Mens-Watches</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary text-start">Womans-Watches</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split text-end"  data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </div>
+
+
+    </div>
+    <div class="col">
+      <div class="container my-5 productsEvent">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12">
+            <div class="row productList">
+              <div>
+                <div
+                  class="spinner-border text-warning"
+                  style="width: 5rem; height: 5rem"
+                  role="status"
+                >
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <h4>Уншиж байна</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=""></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   
     
-    <nav class="navbar navbar-expand-lg navbar-light list-one ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="zurag p-1" src="./Letter.png" alt="E-commerce">  E-Commerce</a>
-        <form class="col-9 ms-3">
-           <div class="input">
-             <input type="text" class="form-control" placeholder="Search" name="search">
-           </div>
-         </form>
-        <div class="col ps-5">
-                <button type="button" class="btn text-primary bg-white form-control ms-2 login " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Нэвтрэх</button>
+  
+  </div>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div
+          class="modal-dialog h-100 w-100 modal-dialog-scrollable position-fixed end-0 m-auto"
+        >
+          <div class="modal-content h-100">
+            <div class="modal-header d-flex">
+              <h5 class="modal-title" id="staticBackdropLabel">Миний сагс</h5>
+              <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <div class="col"> 
+  
+              </div>
+            </div>
+            <div class="modal-body cartList">
+            </div>
+            <div class="modal-footer">
+              <div
+                class="d-flex justify-content-between p-2 mb-2"
+                style="background-color: #e1f5fe"
+              >
+                <h5 class="fw-bold mb-0 price">Нийт төлбөр:</h5>
+                <h5 class="fw-bold mb-0 cartPrice">$2261</h5>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="offcanvas"
+              >
+                Гарах
+              </button>
+              <div class="col-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Авах</button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Нэвтрэх</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Төлбөр төлөлт</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
                         <form>
                           <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Нэр:</label>
+                            <label for="recipient-name" class="col-form-label">Дансны нэр:</label>
                             <input type="text" class="form-control" id="recipient-name">
                           </div>
                           <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Нууц үг:</label>
-                            <input type="password" class="form-control" id="recipient-name">
+                            <label for="recipient-name" class="col-form-label">Картын дугаар:</label>
+                            <input type="text" class="form-control" id="recipient-name">
                           </div>
                         </form>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="col btn border border-danger btn-outline-danger btn-outline-text-white" data-bs-dismiss="modal">Буцах</button>
                         <div class="col-5"></div>
-                        <button type="button" class="col btn btn-primary">Нэвтрэх</button>
+                        <button type="button" class="col btn btn-primary">Төлөх</button>
                       </div>
                     </div>
                   </div>
                 </div>
-        </div>
-        <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-          <div class="d-flex align-items-center">
-            <button
-              class="btn bg-white text-primary position-relative border backet"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasExample"
-              aria-controls="offcanvasExample"
-            >
-              <i class="fas fa-shopping-cart">Миний сагс </i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cartCount"
-              >
-                0
-                <span class="visually-hidden">count</span>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-    
-    <div class="row d-flex list-two p-3">
-      <div class="col p-2 ">
-          <ul class="navbar-nav flex-row">
-           <li class="nav-item col pe-3"><a class="nav-link text-dark" id="counter" href="">Smartphones</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">Entertainment </a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">Laptop</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link text-dark" href="">fragrances</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">skincare</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">groceries</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">home-decoration</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link text-dark" href="">furniture</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">tops</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">womens-shoes</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">mens-shirts</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">mens-watches</a></li>
-           <li class="nav-item col pe-3"><a class="nav-link  text-dark" href="">womans-watches</a></li>
-     </div>
-  </div>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="llr"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="llr1"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="llr2"></div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
-
-    <div class="container my-5 productsEvent">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12">
-          <div class="row productList">
-            <div>
-              <div
-                class="spinner-border text-warning"
-                style="width: 5rem; height: 5rem"
-                role="status"
-              >
-                <span class="visually-hidden">Loading...</span>
-              </div>
-              <h4>Уншиж байна</h4>
+            </div>
             </div>
           </div>
         </div>
       </div>
-      <div class=""></div>
     </div>
-  
-
-</div>
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div
-        class="modal-dialog h-100 w-100 modal-dialog-scrollable position-fixed end-0 m-auto"
-      >
-        <div class="modal-content h-100">
-          <div class="modal-header d-flex">
-            <h5 class="modal-title" id="staticBackdropLabel">Миний сагс</h5>
-            <button type="button" class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-            <div class="col"> 
-
-            </div>
-          </div>
-          <div class="modal-body cartList">
-          </div>
-          <div class="modal-footer">
-            <div
-              class="d-flex justify-content-between p-2 mb-2"
-              style="background-color: #e1f5fe"
-            >
-              <h5 class="fw-bold mb-0 price">Нийт төлбөр:</h5>
-              <h5 class="fw-bold mb-0 me-1 cartPrice"></h5>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="offcanvas"
-            >
-              Гарах
-            </button>
-            <div class="col-2">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Авах</button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Төлбөр төлөлт</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label">Дансны нэр:</label>
-                          <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label">Картын дугаар:</label>
-                          <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="col btn border border-danger btn-outline-danger btn-outline-text-white" data-bs-dismiss="modal">Буцах</button>
-                      <div class="col-5"></div>
-                      <button type="button" class="col btn btn-primary">Төлөх</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -236,5 +458,4 @@
     <script src="homes.js"></script>
   </body>
 </html>
-
 
